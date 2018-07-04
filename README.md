@@ -8,6 +8,9 @@ Run script from the root directory of the project:
 ~ python bot.py
 ```
 
+## Demo
+![Screenshot](bin/demo/bot.png)
+
 ## Contributing
 
 ### Setup
