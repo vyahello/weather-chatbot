@@ -32,19 +32,3 @@ class BotResponse(Response):
 
     def json(self) -> Dict[Any, Any]:
         return self._response.json()
-
-
-class EmptyCurrencyResponse(Response):
-    """Represent an empty HTTP response from an api request."""
-
-    def __init__(self, response: requests.Response) -> None:
-        self._response: requests.Response = response
-
-    def status_code(self) -> int:
-        return self._response.status_code
-
-    def json(self) -> Dict[Any, Any]:
-        try:
-            return self._response.json()[0]
-        except IndexError:
-            pass
