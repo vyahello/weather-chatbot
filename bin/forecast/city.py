@@ -6,6 +6,10 @@ class City(ABC):
     """Abstraction of a city weather data records."""
 
     @abstractmethod
+    def summary(self) -> Dict[str, Any]:
+        pass
+
+    @abstractmethod
     def description(self) -> str:
         pass
 
@@ -28,14 +32,21 @@ class CityWeather(City):
     def __init__(self, weather_data: Dict[Any, Any]) -> None:
         self._weather_data: Dict[Any, Any] = weather_data
 
+    @property
     def description(self) -> str:
         return self._weather_data.get('weather')[0].get('description')
 
+    @property
     def temp(self) -> float:
         return self._weather_data.get('main').get('temp')
 
+    @property
     def country(self) -> str:
         return self._weather_data.get('sys').get('country')
 
+    @property
     def name(self) -> str:
         return self._weather_data.get('name')
+
+    def summary(self) -> Dict[str, Any]:
+        return dict(description=self.description, temperature=self.temp, country=self.country, name=self.name)

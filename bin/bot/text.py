@@ -17,7 +17,7 @@ class Text(ABC):
 class InputText(Text):
     """Parse input message."""
 
-    def __init__(self, text: str, pattern: str = r'/\w+') -> None:
+    def __init__(self, text: str, pattern: str = r'\/[\w\s]+') -> None:
         self._pattern: str = pattern
         self._text: str = text
 
