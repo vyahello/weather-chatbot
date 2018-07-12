@@ -13,19 +13,6 @@ class Weather(ABC):
         pass
 
 
-class EmptyWeatherDataOf(Weather):
-    """Represent empty weather data."""
-
-    def __init__(self, weather: Weather) -> None:
-        self._weather: Weather = weather
-
-    def data_records(self) -> Dict[str, str]:
-        try:
-            return self._weather.data_records()
-        except IndexError:
-            pass
-
-
 class OpenWeatherMap(Weather):
     """Concrete weather object."""
 
