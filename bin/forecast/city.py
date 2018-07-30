@@ -25,6 +25,7 @@ class City(ABC):
 class Summary(ABC):
     """Abstraction of a summary."""
 
+    @abstractmethod
     def get(self) -> Dict[str, Any]:
         pass
 
