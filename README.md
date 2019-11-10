@@ -1,6 +1,7 @@
 # Weather telegram bot
-- Basic telegram bot powered by a webhook that helps you to get current weather in a specific city all around the world.
-- Bot is called `WeatherBot` that served by [pythonanywhere.com](https://pythonanywhere.com) hosting, search for it in the telegram to allow it help you to get your desired weather value. Enjoy it!
+Basic telegram bot powered by a webhook that helps you to get current weather in a specific city all around the world.
+
+Bot is called `WeatherBot` that served by [pythonanywhere.com](https://pythonanywhere.com) hosting, search for it in the `telegram` app to allow it help you to get your desired weather value. Enjoy it!
 
 ## Run a weather bot
 Run script from the root directory of the project:
@@ -12,8 +13,6 @@ Run script from the root directory of the project:
 ![Screenshot](bin/demo/bot.png)
 
 ## Contributing
-
-### Setup
 - clone the repository
 - configure Git for the first time after cloning with your name and email
   ```bash
