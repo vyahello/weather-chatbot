@@ -4,17 +4,17 @@ PACKAGE="src"
 
 
 check-black() {
-    printf "Start black analysis ..." && ( black --check ${PACKAGE} )
+    printf "Start black analysis ...\n" && ( black --check ${PACKAGE} )
 }
 
 
 check-flake() {
-    printf "Start flake8 analysis ..." && ( flake8 ${PACKAGE} )
+    printf "Start flake8 analysis ...\n" && ( flake8 ${PACKAGE} )
 }
 
 
 check-unittests() {
-    printf "Start unittests analysis ..." && pytest
+    printf "Start unittests analysis ...\n" && pytest
 }
 
 
