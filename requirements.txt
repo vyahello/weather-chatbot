@@ -1,5 +1,4 @@
-werkzeug
-requests
-pytest
-flask
-flask_sslify
+werkzeug==0.16.0
+requests==2.22.0
+flask==1.1.1
+flask_sslify==0.1.5

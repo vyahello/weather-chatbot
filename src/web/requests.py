@@ -1,8 +1,8 @@
 from abc import ABC, abstractmethod
 from typing import Dict, Any, Callable
-from bin.web_api.api import Session, BotSession
-from bin.web_api.responses import Response, ResponseError
-from bin.web_api.urls import Url
+from src.web.api import Session, BotSession
+from src.web.responses import Response, ResponseError
+from src.web.urls import Url
 
 
 class Request(ABC):
@@ -36,11 +36,10 @@ class SafeBotRequest(Request):
     """
 
     def __init__(self, url: Url, success: int = 200) -> None:
-
         def _safe(res: Response) -> Response:
             code: int = res.status_code()
             if code is not success:
-                raise ResponseError(f'HTTP response error with {code} status code!!!')
+                raise ResponseError(f"HTTP response error with {code} status code!!!")
             return res
 
         self._session: Session = BotSession(url)

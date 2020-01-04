@@ -17,4 +17,4 @@ class CommonUrl(Url):
         self._url: Sequence[Any] = url_elements
 
     def compose(self) -> str:
-        return ''.join(map(str, self._url))
+        return "".join(map(str, self._url))
