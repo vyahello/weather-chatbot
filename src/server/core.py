@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 from typing import Any, Callable, Iterable
-from flask import Flask
+from flask import Flask, render_template
 
 
 class Server(ABC):
@@ -12,6 +12,10 @@ class Server(ABC):
 
     @abstractmethod
     def run(self, host: str = None, port: int = None, debug: Any = None, **options: Any) -> None:
+        pass
+
+    @abstractmethod
+    def render_template(self, template: str, **kwargs: Any) -> str:
         pass
 
 
@@ -26,3 +30,6 @@ class WebServer(Server):
 
     def run(self, host: str = None, port: int = None, debug: Any = None, **options: Any) -> None:
         return self._app.run(host, port, debug, **options)
+
+    def render_template(self, template: str, **kwargs: Any) -> str:
+        return render_template(template, **kwargs)

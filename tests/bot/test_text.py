@@ -1,10 +1,10 @@
 import pytest
-from bin.bot.text import Text, InputText
+from src.bot.text import Text, InputText
 
 
-@pytest.fixture(scope='module')
+@pytest.fixture(scope="module")
 def input_text() -> Text:
-    return InputText(text='/test', pattern=r'\w+')
+    return InputText(text="/test", pattern=r"\w+")
 
 
 def test_match(input_text: Text) -> None:
@@ -12,4 +12,4 @@ def test_match(input_text: Text) -> None:
 
 
 def test_get(input_text: Text) -> None:
-    assert input_text.get() == 'test'
+    assert input_text.get() == "test"

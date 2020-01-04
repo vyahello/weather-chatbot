@@ -37,16 +37,16 @@ class CityWeather(City):
         self._weather_data: Dict[Any, Any] = weather_data
 
     def description(self) -> str:
-        return self._weather_data.get('weather')[0].get('description')
+        return self._weather_data.get("weather")[0].get("description")
 
     def temp(self) -> float:
-        return self._weather_data.get('main').get('temp')
+        return self._weather_data.get("main").get("temp")
 
     def country(self) -> str:
-        return self._weather_data.get('sys').get('country')
+        return self._weather_data.get("sys").get("country")
 
     def name(self) -> str:
-        return self._weather_data.get('name')
+        return self._weather_data.get("name")
 
 
 class CityWeatherSummary(Summary):
@@ -60,5 +60,5 @@ class CityWeatherSummary(Summary):
             description=self._city_weather.description(),
             temperature=self._city_weather.temp(),
             country=self._city_weather.country(),
-            name=self._city_weather.name()
-                    )
+            name=self._city_weather.name(),
+        )

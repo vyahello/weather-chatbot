@@ -14,3 +14,5 @@ venv
 # python identifiers
 .python-version
 .pytest_cache/
+.coverage
+test-report.html
