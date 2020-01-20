@@ -1,12 +1,12 @@
 from abc import ABC, abstractmethod
 from typing import Dict, Any, Callable
-from src.bot import BOT_API_TOKEN
-from src.forecast.city import CityWeatherSummary
-from src.forecast.weather import OpenWeatherMap
-from src.server import requests
-from src.web.requests import Request, SafeBotRequest
-from src.web.responses import Response
-from src.web.urls import CommonUrl
+from chat.bot import BOT_API_TOKEN
+from chat.forecast.city import CityWeatherSummary
+from chat.forecast.weather import OpenWeatherMap
+from chat.server import requests
+from chat.web.requests import Request, SafeBotRequest
+from chat.web.responses import Response
+from chat.web.urls import CommonUrl
 
 
 class Answer(ABC):

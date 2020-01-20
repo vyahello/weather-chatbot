@@ -1,6 +1,6 @@
-from src.bot import BOT_API_TOKEN
+from chat.bot import BOT_API_TOKEN
 
-_api_key: str = "523806969:AAGmLcMpcH_wUd69KB6JeN3ETGUtXbjoGz0"
+_api_key: str = str()
 
 
 def test_api_key() -> None:

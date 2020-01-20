@@ -1,8 +1,8 @@
 from abc import ABC, abstractmethod
 from typing import Dict
-from src.forecast import WEATHER_ID
-from src.web.requests import Request, SafeBotRequest
-from src.web.urls import CommonUrl
+from chat.forecast import WEATHER_ID
+from chat.web.requests import Request, SafeBotRequest
+from chat.web.urls import CommonUrl
 
 
 class Weather(ABC):

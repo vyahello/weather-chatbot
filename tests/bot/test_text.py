@@ -1,5 +1,5 @@
 import pytest
-from src.bot.text import Text, InputText
+from chat.bot.text import Text, InputText
 
 
 @pytest.fixture(scope="module")

@@ -1,8 +1,8 @@
 from abc import ABC, ABCMeta, abstractmethod
 from typing import Dict, Any
 import requests
-from src.web.responses import Response, BotResponse
-from src.web.urls import Url
+from chat.web.responses import Response, BotResponse
+from chat.web.urls import Url
 
 
 class Session(ABC):

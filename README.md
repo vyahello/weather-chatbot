@@ -6,6 +6,7 @@
 [![Stars](https://img.shields.io/github/stars/vyahello/weather-chatbot)](https://github.com/vyahello/weather-chatbot/stargazers)
 [![GitHub contributors](https://img.shields.io/github/contributors/vyahello/weather-chatbot.svg)](https://GitHub.com/vyahello/weather-chatbot/graphs/contributors/)
 
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE.md)
 [![Hits-of-Code](https://hitsofcode.com/github/vyahello/weather-chatbot)](https://hitsofcode.com/view/github/vyahello/weather-chatbot)
 
@@ -15,7 +16,7 @@
 > Bot is called `WeatherBot` that served by, search for it in the `telegram` app to allow it help you to get your desired weather value. 
 > Enjoy it!
 
-**Tools**
+## Tools
 - python 3.6+
 - [flask](https://pypi.org/project/Flask/)
 - [pytest](https://pypi.org/project/pytest/)
@@ -25,11 +26,14 @@
 ## Usage
 Run script from the root directory of the project:
 ```bash
-~ python chat.py
+~ python -m chat
+Serving Flask app "chat.server.core" (lazy loading)
+Running on http://127.0.0.1:5000
+...
 ```
 
 ## Demo
-![Screenshot](src/demo/bot.png)
+![Screenshot](chat/demo/bot.png)
 
 ## Development notes
 

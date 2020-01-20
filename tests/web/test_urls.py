@@ -1,4 +1,4 @@
-from src.web.urls import CommonUrl
+from chat.web.urls import CommonUrl
 
 
 def test_common_url() -> None:

@@ -1,6 +1,6 @@
 from typing import Dict, Any
 import pytest
-from src.forecast.city import City, CityWeather, CityWeatherSummary
+from chat.forecast.city import City, CityWeather, CityWeatherSummary
 
 
 _weather_data: Dict[str, Any] = {

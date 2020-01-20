@@ -1,6 +1,6 @@
-from src.bot.messages import Answer, BotAnswer, BotMessage
-from src.bot.text import Text, InputText
-from src.server import server, Request, ServerRequest
+from chat.bot.messages import Answer, BotAnswer, BotMessage
+from chat.bot.text import Text, InputText
+from chat.server import server, Request, ServerRequest
 
 
 @server.route("/", methods=("GET", "POST"))

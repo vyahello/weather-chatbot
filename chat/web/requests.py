@@ -1,8 +1,8 @@
 from abc import ABC, abstractmethod
 from typing import Dict, Any, Callable
-from src.web.api import Session, BotSession
-from src.web.responses import Response, ResponseError
-from src.web.urls import Url
+from chat.web.api import Session, BotSession
+from chat.web.responses import Response, ResponseError
+from chat.web.urls import Url
 
 
 class Request(ABC):

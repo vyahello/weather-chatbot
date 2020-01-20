@@ -1,4 +1,4 @@
-from src.server import server
+from chat.server import server
 
 
 def run_weather_chatbot() -> None:
